@@ -5,6 +5,9 @@
     <title>CrowdLobby: A Lobby for the People</title>
     <link type="text/css" rel="stylesheet"
 	  href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    //next two lines activate responsiveness in CSS
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
       body {
       padding-top: 20px;
@@ -42,8 +45,7 @@
       height: auto;
       line-height: 40px;
       }
-      .thermometer.progress {
-      width: 80%;
+      .progress {
       margin: 5px auto;
       }
       div.row {
@@ -85,7 +87,7 @@
 	</div>
 	<div class="span6">
 	  <div class="thermometer">
-	    <div class="progress progress-striped">
+	    <div class="progress progress-striped span4 offset1">
 	      <div class="bar" style="width:90%;"></div>
 	    </div>
 	    Campaign Progress (450 / 500 Shares)
@@ -101,7 +103,7 @@
       </div>
       <div class="row section1">
 	<div class="span12">
-	  Marketing Section 1
+	  Campaign Proposal
 	</div>
       </div>
       <div class="row section2">
