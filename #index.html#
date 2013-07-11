@@ -3,12 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>CrowdLobby: A Lobby for the People</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet"
 	    href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
-    <link type="text/css" rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="http://twitter-bootstrap.node1.zjs/bootstrap-modal.js"></script>
+
+    <script>
+      $('#posModal').modal(options)
+    </script>
+    <style type="text/css">
+      body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      }
+      .container {
+      width: 960px;
+      }
+      p.lead {
+      padding-top: 15px;
+      }
+      .navigation, .pitch, .section1, .section2, .faq, .footer {
+      padding: 10px 0px 10px 0px;
+      }
+      img.logo {
+      height: 93px;
+      }
+      .tagline {
+      font-weight: bold;
+      }
+      .description {
+      width: 80%;
+      }
+      .video, .thermometer, .order, .social {
+      border: 1px dotted;
+      text-align: center;
+      }
+      .video {
+      /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
+      height: 280px;
+      line-height: 124px;
+      }
+      .thermometer, .order, .social {
+      /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+      height: auto;
+      line-height: 40px;
+      }
+      .progress {
+      margin: 10px 10px 0 10px;
+      }
+      div.row {
+      border: 1px solid;
+      }
+      
+    </style>
   </head>
   <body>
     <div class="container">
@@ -25,15 +74,12 @@
 	  </div>
 	</div>
 	<div class="span4 about">
-<!--
 	  <form class="form-inline">
 	     <input type="text" class="input-small" placeholder="Email">
 	      <input type="password" class="input-small" placeholder="Password">
 	       <button type="submit" class="btn">Sign in</button>
 	       </form>
--->
-	  <a href="about.html"></a>
-
+	  <a href="about.html">About</a>
 	</div>
       </div>
       <div class="row heading">
@@ -55,34 +101,28 @@
 	    <div class="progress progress-striped">
 	      <div class="bar" style="width:90%;"></div>
 	    </div>
-            <ul class="campaign-topline-stats">
-              <li><strong>91%</strong> funded</li>
-              <li><strong>$9,100</strong> pledged</li>
-              <li><strong>4</strong> days to go</li>
-            </ul>
+	    Campaign Progress (450 / 500 Shares)
 	  </div>
 	  <div class="order">
 	    Funding is activated when campaign is shared 500 times. 
 	  </div>
 	  <div class="social">
 	    Share Campaign Now to Help Pass Campaign to Funding Round
-	          <a class="btn btn-primary" data-toggle="modal" href="#myModal">Launch Modal</a>
-
-
-<div class="modal hide" id="myModal"><!-- note the use of "hide" class -->
-  <div class="modal-header">
-    <button class="close" data-dismiss="modal">√ó</button>
-    <h3>Fund Campaign</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body‚Ä¶</p>
-    <select class="input-medium bfh-states" data-country="US" data-state="CA"></select>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a><!-- note the use of "data-dismiss" -->
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
-</div>‚Äã
+	      <a class="btn btn-large btn-primary" type="button" href="#posModal" data-toggle="modal">Donate Now</a>
+	      <!-- posModal -->
+	      <div id="posModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Å◊</button>
+		  <h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+		  <p>One fine bodyúÙÛ¶</p>
+		</div>
+		<div class="modal-footer">
+		  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		  <button class="btn btn-primary">Save changes</button>
+		</div>
+	      </div>
 	      <!--<img src="http://i.imgur.com/rc9pFrP.png"> social share buttons pic-->
 	  </div>
 	</div>
@@ -124,21 +164,19 @@
       </div>
       <div class="row section2">
 	<div class="span12">
-	  Marketing Section 2
-	</div>
+	    Marketing Section 2
+	    </div>
       </div>
       <div class="row faq">
 	<div class="span12">
-	  FAQ
-	</div>
+	    FAQ
+	    </div>
       </div>
       <div class="row footer">
 	<div class="span12">
-	  Footer
-	</div>
+	    Footer
+	    </div>
       </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>
