@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>CrowdLobby: A Lobby for the People</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet"
 	    href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
     <style type="text/css">
       body {
       padding-top: 20px;
@@ -64,7 +67,7 @@
 	    Crowd Funded Lobbying Campaigns
 	    </div>
 	  <div class="description">
-	    Giving the people a seat at the table.
+	    The people's seat at the table.
 	  </div>
 	</div>
 	<div class="span4 about">
@@ -73,48 +76,64 @@
 	      <input type="password" class="input-small" placeholder="Password">
 	       <button type="submit" class="btn">Sign in</button>
 	       </form>
-	    <a href="about.html">About</a>
-	    </div>
+	  <a href="about.html">About</a>
+	</div>
       </div>
       <div class="row heading">
 	<div class="span12">
-	    <h1></h1>
-	    </div>
+	  <h1></h1>
+	</div>
       </div>
       <div class="row subheading">
 	<div class="span12">
-	    <p class="lead">Bill HR55555 Legalize Marijuana in New Jersey</p>
-	    </div>
-      </div>
+	  <p class="lead">Bill HR55555 Legalize Marijuana in New Jersey</p>
+	</div>
+      </Div>
       <div class="row pitch">
 	<div title="Campaign Video" class="span6 video">
-	    <img src="http://i.imgur.com/PSwnCBl.png" >
-	    </div>
+	  <img src="http://i.imgur.com/PSwnCBl.png" >
+	</div>
 	<div class="span6">
-	    <div class="thermometer">
-	          <div class="progress progress-striped">
-		          <div class="bar" style="width:90%;"></div>
-			      </div>
-		      Campaign Progress (450 / 500 Shares)
-		    </div>
-	      <div class="order">
-		    Funding is activated when campaign is shared 500 times. 
-		      </div>
-	        <div class="social">
-		      Share Campaign Now to Help Pass Campaign to Funding Round
-		          <img src="http://i.imgur.com/rc9pFrP.png">
-			    </div>
-		</div>
+	  <div class="thermometer">
+	    <div class="progress progress-striped">
+	      <div class="bar" style="width:90%;"></div>
+	    </div>
+	    Campaign Progress (450 / 500 Shares)
+	  </div>
+	  <div class="order">
+	    Funding is activated when campaign is shared 500 times. 
+	  </div>
+	  <div class="social">
+	    Share Campaign Now to Help Pass Campaign to Funding Round
+	          <a class="btn btn-primary" data-toggle="modal" href="#myModal">Launch Modal</a>
+
+
+<div class="modal hide" id="myModal"><!-- note the use of "hide" class -->
+  <div class="modal-header">
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a><!-- note the use of "data-dismiss" -->
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>​
+	      <!--<img src="http://i.imgur.com/rc9pFrP.png"> social share buttons pic-->
+	  </div>
+	</div>
       </div>
       <div class="row section1">
 	<div class="span12">
-	               <div id="navbarExample" class="navbar navbar-static">
-              <div class="navbar-inner">
-                <div class="container" style="width: auto;">
-                  <a class="brand" href="#summary">Campaign Summary</a>
-                  <ul class="nav">
-                    <li><a href="#law">@law</a></li>
-                    <li><a href="#lobbyist">@lobbyist</a></li>
+	  <div id="navbarExample" class="navbar navbar-static">
+            <div class="navbar-inner">
+              <div class="container" style="width: auto;">
+                <a class="brand" href="#summary">Campaign Summary</a>
+                <ul class="nav">
+                  <li><a href="#law">@law</a></li>
+                  <li><a href="#lobbyist">@lobbyist</a></li>
                     <li><a href="#phases">@phases</a></li>
                   </ul>
                 </div>
