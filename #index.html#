@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CrowdLobby: A Lobby for the People</title>
+    <link type="text/css" rel="stylesheet"
+	    href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="http://twitter-bootstrap.node1.zjs/bootstrap-modal.js"></script>
+
+    <script>
+      $('#posModal').modal(options)
+    </script>
+    <style type="text/css">
+      body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      }
+      .container {
+      width: 960px;
+      }
+      p.lead {
+      padding-top: 15px;
+      }
+      .navigation, .pitch, .section1, .section2, .faq, .footer {
+      padding: 10px 0px 10px 0px;
+      }
+      img.logo {
+      height: 93px;
+      }
+      .tagline {
+      font-weight: bold;
+      }
+      .description {
+      width: 80%;
+      }
+      .video, .thermometer, .order, .social {
+      border: 1px dotted;
+      text-align: center;
+      }
+      .video {
+      /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
+      height: 280px;
+      line-height: 124px;
+      }
+      .thermometer, .order, .social {
+      /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+      height: auto;
+      line-height: 40px;
+      }
+      .progress {
+      margin: 10px 10px 0 10px;
+      }
+      div.row {
+      border: 1px solid;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row navigation">
+	<div class="span2 logo">
+	  <img class="logo" src="http://i.imgur.com/93aYK84.png">
+	</div>
+	<div class="span6">
+	  <div class="tagline">
+	    Crowd Funded Lobbying Campaigns
+	    </div>
+	  <div class="description">
+	    The people's seat at the table.
+	  </div>
+	</div>
+	<div class="span4 about">
+	  <form class="form-inline">
+	     <input type="text" class="input-small" placeholder="Email">
+	      <input type="password" class="input-small" placeholder="Password">
+	       <button type="submit" class="btn">Sign in</button>
+	       </form>
+	  <a href="about.html">About</a>
+	</div>
+      </div>
+      <div class="row heading">
+	<div class="span12">
+	  <h1></h1>
+	</div>
+      </div>
+      <div class="row subheading">
+	<div class="span12">
+	  <p class="lead">Bill HR55555 Legalize Marijuana in New Jersey</p>
+	</div>
+      </Div>
+      <div class="row pitch">
+	<div title="Campaign Video" class="span6 video">
+	  <img src="http://i.imgur.com/PSwnCBl.png" >
+	</div>
+	<div class="span6">
+	  <div class="thermometer">
+	    <div class="progress progress-striped">
+	      <div class="bar" style="width:90%;"></div>
+	    </div>
+	    Campaign Progress (450 / 500 Shares)
+	  </div>
+	  <div class="order">
+	    Funding is activated when campaign is shared 500 times. 
+	  </div>
+	  <div class="social">
+	    Share Campaign Now to Help Pass Campaign to Funding Round
+	      <a class="btn btn-large btn-primary" type="button" href="#posModal" data-toggle="modal">Donate Now</a>
+	      <!-- posModal -->
+	      <div id="posModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Å◊</button>
+		  <h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+		  <p>One fine bodyúÙÛ¶</p>
+		</div>
+		<div class="modal-footer">
+		  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		  <button class="btn btn-primary">Save changes</button>
+		</div>
+	      </div>
+	      <!--<img src="http://i.imgur.com/rc9pFrP.png"> social share buttons pic-->
+	  </div>
+	</div>
+      </div>
+      <div class="row section1">
+	<div class="span12">
+	  <div id="navbarExample" class="navbar navbar-static">
+            <div class="navbar-inner">
+              <div class="container" style="width: auto;">
+                <a class="brand" href="#summary">Campaign Summary</a>
+                <ul class="nav">
+                  <li><a href="#law">@law</a></li>
+                  <li><a href="#lobbyist">@lobbyist</a></li>
+                    <li><a href="#phases">@phases</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
+              <h4 id="summary">@summary</h4>
+              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              
+              <h4 id="law">@law</h4>
+              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              <h4 id="lobbyist">@lobbyist</h4>
+              <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+              <h4 id="phases">@phases</h4>
+              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+              <h4 id="one">one</h4>
+              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+              <h4 id="two">two</h4>
+              <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+              <h4 id="three">three</h4>
+              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="row section2">
+	<div class="span12">
+	    Marketing Section 2
+	    </div>
+      </div>
+      <div class="row faq">
+	<div class="span12">
+	    FAQ
+	    </div>
+      </div>
+      <div class="row footer">
+	<div class="span12">
+	    Footer
+	    </div>
+      </div>
+    </div>
+  </body>
+</html>
