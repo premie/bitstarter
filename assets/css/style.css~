@@ -8,7 +8,10 @@
       p.lead {
       padding-top: 15px;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
+      .navigation {
+        margin-bottom: 10px;
+      }
+      .navigation, .pitch, .section1, .section2, .faq, .footer {      
       padding: 10px 0px 10px 0px;
       }
       img.logo {
@@ -24,11 +27,7 @@
 /*      border: 1px dotted;*/
       text-align: center;
       }
-      .video {
-      /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-      height: 280px;
-      line-height: 124px;
-      }
+
       .thermometer, .order, .action-button {
       /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
 /*      height: auto;*/
@@ -42,7 +41,7 @@
       }
 
 .campaign-topline-stats {
-  height: 50px;
+  height: 70px;
 }
 
 .campaign-topline-stats li {
@@ -53,4 +52,10 @@
   padding: 0;
   text-align: center;
   width: 33%;
+}
+
+.campaign-topline-stats li strong {
+  display: block;
+/*  font-size: 40px;*/
+  margin: 0 0 15px 0;
 }
