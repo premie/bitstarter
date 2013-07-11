@@ -5,6 +5,10 @@ var buffer = fs.readFileSync('index.html');
 var string = buffer.toString();
 
 var app = express.createServer(express.logger());
+app.use(express.static(__dirname + '/assets'));
+app.use(express.static(__dirname + '/assets/css'));
+app.use(express.static(__dirname + '/assets/img'));
+app.use(express.static(__dirname + '/assets/js'));
 
 app.get('/', function(request, response) {
   response.send(string);
