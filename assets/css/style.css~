@@ -41,14 +41,8 @@
       border: 1px solid;
       }
 
-.campaign-topline-stats {
-  height: 50px;
-}
-
 .campaign-topline-stats li {
-  float: left;
-  list-style-type: none;
-  margin: 20px 0 0 0;
+  margin: 0;
   padding: 0;
   text-align: center;
   width: 33%;
