@@ -20,8 +20,8 @@
       .description {
       width: 80%;
       }
-      .video, .thermometer, .order, .social {
-      border: 1px dotted;
+      .video, .thermometer, .order, .action-button {
+/*      border: 1px dotted;*/
       text-align: center;
       }
       .video {
@@ -29,16 +29,16 @@
       height: 280px;
       line-height: 124px;
       }
-      .thermometer, .order, .social {
+      .thermometer, .order, .action-button {
       /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-      height: auto;
-      line-height: 40px;
+/*      height: auto;*/
+/*      line-height: 40px;*/
       }
       .progress {
       margin: 10px 10px 0 10px;
       }
       div.row {
-      border: 1px solid;
+      border: 1px solid #ddd;
       }
 
 .campaign-topline-stats {
@@ -47,6 +47,7 @@
 
 .campaign-topline-stats li {
   float: left;
+  line-height: 1em;
   list-style-type: none;
   margin: 20px 0 0 0;
   padding: 0;
