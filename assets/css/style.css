@@ -1,64 +1,136 @@
-      body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      }
-      .container {
-      width: 960px;
-      }
-      p.lead {
-      padding-top: 15px;
-      }
-      .navigation {
-        margin-bottom: 10px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {      
-      padding: 10px 0px 10px 0px;
-      }
-      img.logo {
-      height: 93px;
-      }
-      .tagline {
-      font-weight: bold;
-      }
-      .description {
-      width: 80%;
-      }
-      .video, .thermometer, .order, .action-button {
-/*      border: 1px dotted;*/
-      text-align: center;
-      }
+/* Large Desktop */
+@media (min-width: 980px) {
+    body {
+	padding-top: 60px;
+    }
+    .linediv-l{
+	bo`rder-right:1px white solid;
+    }
+    .linediv-r {
+	border-left:1px white solid;
+    }
+}
 
-      .order {
-      margin-bottom: 20px;
-      }
-      .thermometer, .order, .action-button {
-      /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+/*landscape phones and down*/
+@media (max-width: 480px) {
+    .copy {
+	padding: 2.5% 10%;
+    }
+    .linediv-l {
+	border-bottom: 1px white solid;
+    }
+    .linediv-r {
+	border-top: 1px white solid;
+    }
+}
+
+/*All Form factors*/
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.heading .subheading {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+p.lead {
+    padding-top: 1.5%;
+    font-size: 24px;
+    line-height: 30px;
+}
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+/* Video pitch and Action*/
+.pitch {
+    padding: 2.5% 0%;
+}
+.order {
+padding: 2% 0%;
+}
+.actions {
+    background-color: #343434;
+    padding: 3% 0%;
+}
+.video, .thermometer, .order, .action-button .social .statistics{
+    /*      border: 1px dotted;*/
+    text-align: center;
+}
+.statistics h3 .statistics p {
+    color: white;
+}
+/* Marketing Copy and Footer*/
+.copy {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: justify;
+}
+.asset {
+    padding: 2.5% 0%;
+}
+.footer {
+    color: #cccccc;
+    text-align: center;
+}
+.footer p {
+    font-size: 11px;
+}
+.footer a {
+    color: #cccff;
+}
+
+/*older CSS*/
+
+.navigation {
+    margin-bottom: 10px;
+}
+.navigation, .pitch, .section1, .section2, .faq, .footer {      
+    padding: 10px 0px 10px 0px;
+}
+img.logo {
+    height: 93px;
+}
+.tagline {
+    font-weight: bold;
+}
+.description {
+    width: 80%;
+}
+
+.order {
+    margin-bottom: 20px;
+}
+.thermometer, .order, .action-button {
+/* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
 /*      height: auto;*/
 /*      line-height: 40px;*/
-      }
-      .progress {
-      margin: 10px 10px 0 10px;
-      }
-      div.row {
-      border: 1px solid #ddd;
-      }
+}
+.progress {
+    margin: 10px 10px 0 10px;
+}
+div.row {
+    border: 1px solid #ddd;
+}
 
 .campaign-topline-stats {
-  height: 70px;
+    height: 70px;
 }
 
 .campaign-topline-stats li {
-  float: left;
-  line-height: 1em;
-  list-style-type: none;
-  margin: 20px 0 0 0;
-  padding: 0;
-  text-align: center;
-  width: 33%;
+    float: left;
+    line-height: 1em;
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    text-align: center;
+    width: 33%;
 }
 
 .campaign-topline-stats li strong {
-  display: block;
-/*  font-size: 40px;*/
-  margin: 0 0 5px 0;
+    display: block;
+    /*  font-size: 40px;*/
+    margin: 0 0 5px 0;
 }
