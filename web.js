@@ -19,7 +19,7 @@ var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Node Server  on port " + port);
 });
-
+/*
 app.post("/campaigns/1", function(req, res) {
   stripe.customers.create({
     card : req.body.stripeToken,
@@ -38,3 +38,4 @@ app.post("/campaigns/1", function(req, res) {
     }
   });
 });
+*/
