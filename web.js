@@ -18,3 +18,23 @@ var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Node Server  on port " + port);
 });
+
+var stripeApiKey = "sk_live_bIN2AebwP4qxObQab0sw6uwj";
+var stripeApiKeyTesting = "sk_test_tk6iYu7K4khzJGxi6YglNYe1";
+var stripe = require('stripe')(stripeApiKey);
+   
+app.post("/test-page", function (req, res) {
+    var token = req.body.stripeToken;
+
+    stripe.customers.create(
+	{ email: "foobar@example.org" },
+	function(err, customer) {
+	    if (err) {
+		console.log(err.message);
+		return;
+	    }
+	    console.log("customer id", customer.id);
+	}
+    );
+
+});
