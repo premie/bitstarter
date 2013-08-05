@@ -41,9 +41,10 @@ app.post('/test-charge2', function(request, response) {
 
     var token = request.param('stripeToken',null); // or request.body.stripeToken
     console.log('token: '+ token);
+    var chargeAmount = request.body.amount * 100;
 
     stripe.charges.create(
-	{ amount: '0075',
+	{ amount: chargeAmount,
 	  currency: 'usd', //see https:stripe.com/docs/api#create_charge
 	  card: token},
 	function(err, customer) {
