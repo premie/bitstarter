@@ -33,7 +33,7 @@ app.post('/test-charge', function(request, response) {
 	    } 
 	    //success
 	    console.log("customer if: ", customer.id);
-	    response.send("It worked");
+	    response.send("It worked!");
 	}
     );
 });
@@ -54,7 +54,7 @@ app.post('/test-charge2', function(request, response) {
 	    } 
 	    //success
 	    console.log("customer if: ", customer.id);
-	    response.send("It worked");
+	    response.send("It worked!\nCharged Customer id#"+customer.id+" $"+chargeAmount/100+".00");
 	}
     );
 });
