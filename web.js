@@ -1,3 +1,5 @@
+process.env.PWD = process.cwd();
+
 var express = require('express');
 var fs = require('fs');
 
@@ -10,7 +12,7 @@ var buffer = fs.readFileSync('index.html');
 var string = buffer.toString();
 
 var app = express.createServer(express.logger());
-app.use(express.static(__dirname+'/assets'));
+app.use(express.static(process.env.PWD+'/assets'));
 
 app.use(express.bodyParser());
 
