@@ -27,27 +27,7 @@ app.post('/test-charge', function(request, response) {
 
     var token = request.param('stripeToken',null); // or request.body.stripeToken
     console.log('token: '+ token);
-
-    stripe.charges.create(
-	{ amount: '0050',
-	  currency: 'usd', //see https:stripe.com/docs/api#create_charge
-	  card: token},
-	function(err, customer) {
-	    if (err) {
-		console.log(err.message);
-		return;
-	    } 
-	    //success
-	    console.log("customer if: ", customer.id);
-	    response.send("It worked!");
-	}
-    );
-});
-app.post('/test-charge2', function(request, response) {
-
-    var token = request.param('stripeToken',null); // or request.body.stripeToken
-    console.log('token: '+ token);
-    var chargeAmount = request.body.amount * 100;
+    var chargeAmount = parseInt(parseFloat(request.body.amount.substring(2).replace(/,/g, ''))*100);
 
     stripe.charges.create(
 	{ amount: chargeAmount,
@@ -59,10 +39,13 @@ app.post('/test-charge2', function(request, response) {
 		return;
 	    } 
 	    //success
-	    console.log("customer if: ", customer.id);
-	    response.send("It worked!\nCharged Customer id#"+customer.id+" $"+chargeAmount/100+".00");
+	    console.log("It worked!\nCharged Customer id#"+customer.id+" $"+chargeAmount/100);
+	    var successAlert = "<script>alert('Thanks for funding this campaign.  Your card has been charged: $ "+(chargeAmount/100).toFixed(2).toString()+"');</script>";
+	    successAlert += string;
+	    response.send(successAlert);
 	}
     );
+    
 });
 
 

@@ -260,7 +260,7 @@
 		<div class="modal-body">
 		  <div id="cardPayment">
 		    <div id="stripe-form">
-		      <Form action="/test-charge2" method="POST" id="payment-form">
+		      <Form action="/test-charge" method="POST" id="payment-form">
 			<span class="payment-errors"></span>
 			
 			<div class="form-row">
@@ -289,7 +289,7 @@
 			  $('form').append($input).submit();
 			  };
 			  
-			  var donationAmt = document.querySelector('#charge_amount').value.substring(2) * 100;
+			  var donationAmt = parseInt(parseFloat(document.querySelector('#charge_amount').value.substring(2).replace(/,/g, ''))*100);
 			  
 			  StripeCheckout.open({
 			  key:         'pk_test_xDbIkmupFppYWGgD1yCbQbiG',
