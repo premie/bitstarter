@@ -10,6 +10,7 @@ var buffer = fs.readFileSync('index.html');
 var string = buffer.toString();
 
 var app = express.createServer(express.logger());
+app.use(express.static(__dirname+'/assets'));
 
 app.use(express.bodyParser());
 
